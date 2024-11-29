@@ -1,0 +1,330 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+.container{
+    background-image: url(/images/Main\ page.jpg  );
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+}
+
+header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color:#89A8B2;
+     border-bottom-style:inset;
+     z-index:10;
+     position: sticky;
+     top: 0;
+} 
+
+header a{
+    text-decoration:none;
+    color:#4B4376;
+    font-family: "Open Sans", serif;
+    font-size: smaller;
+    font-weight: 700;
+    padding: 5px;
+}
+nav{
+    margin-right: 8em;
+}
+
+header a:hover{
+    background-color:#78B3CE;
+    border-radius: 7px;
+}
+
+header img{
+    height: 4em;
+    margin-left: 3em;
+}
+
+.maintext{
+    color: aliceblue;
+    display:flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    position: absolute;
+    left: 70%;
+}
+.tagline{
+    color:#9EDF9C;
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    font-size: xx-large;
+    font-weight: 800;
+    font-family: "Caudex", serif;
+    animation: run 2s ease-in-out infinite;
+}
+ 
+@keyframes run {
+   to{
+    color:white;
+    text-shadow: 
+    0 0 5px #12cbc4,
+    0 0 25px #12cbc4,
+    0 0 50px #12cbc4,
+    0 0 100px #12cbc4;
+   } 
+}
+.tagline1{
+    font-size: 12px;
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color:#FAB12F;
+    margin-top: 5em;
+}
+
+.tagline2{
+    font-size: xxx-large;
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+    text-shadow: 4px 5px 15px rgb(0, 0, 0);
+    margin-left: .75em;
+}
+span{
+    color: wheat;
+}
+
+.tagline3{
+    font-size:xx-large;
+    font-family: "Open Sans", serif;
+    font-weight: 800;
+    color:#FAB12F;
+    text-shadow: 4px 5px 15px rgb(0, 0, 0);
+    margin-left: 2em;
+}
+.maintext button{
+    width: 7vw;
+    height: 4vh;
+    background-color: #FAB12F;
+    color: whitesmoke;
+    border-radius: 8px;
+    border: 1px solid #FAB12F;
+    margin-top: 2em;
+    margin-left: 6em;
+}
+button:hover{
+    color: #FAB12F;
+    background-color: rgb(228, 208, 181);
+}
+ ul{
+    margin-top: 4em;
+    margin-left:3em;
+    list-style: none;
+ }
+
+ /* -----------------------------------------2nd page------------------------------------------------- */
+
+ .page2{
+    position: relative;
+    /* overflow: hidden; */
+    height: 100vh;
+    background-image: linear-gradient(to right top, #bfecff, #afe1ff, #a8d5ff, #a9c6ff, #b4b6ff, #b5a9fd, #b99bf9, #bf8cf3, #b580f6, #a974f9, #9b68fc, #8b5dff);
+    background-size: 400% 400%;
+    animation: bg-color 5s ease-in infinite;
+}
+
+@keyframes bg-color {
+    0%{background-position: 0%;}
+    50%{background-position: 100%;}
+    100%{background-position: 0%;}
+    
+}
+
+ .profilepic img{
+        height: 695.2px;
+        width: 432.4px;
+        position: absolute;
+        left: 71.5%;
+ }
+
+ .about{
+    font-family: "Caudex", serif;
+    font-size: xx-large;
+    font-weight: 700;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+ }
+
+ .para1{
+    font-family: "Open Sans", serif;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: 50vw;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: justify;
+ }
+ .para2{
+    font-family: "Open Sans", serif;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 50vw;
+    padding-top: 17px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: justify;
+ }
+
+ /* -----------------------------------------3nd page--------------------------- */
+
+.page3{
+    /* overflow: hidden; */
+    height: 100vh;
+    
+}
+
+.page3 h2{
+    font-family: "Caudex", serif;
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+    margin-top: .75em;
+}
+
+.mainimg{
+    display: flex;
+    justify-content:space-around;
+    margin: 2em 5em;
+}
+.mainimg span{
+    font-family: "Caudex", serif;
+    color: black;
+    font-weight: 800;
+    font-size: large;
+}
+.mainimg p{
+    font-family: "Open Sans", serif;
+    margin-top: 5px;
+}
+.wimg1 img{
+      height: 470px;
+      width: 350px;
+      box-shadow: 2px 4px 50px #000000;
+      border-radius: 12px;
+}
+
+.wimg2 img{
+      height: 470px;
+      width: 350px;
+      box-shadow: 2px 4px 50px #000000;
+      border-radius: 12px;
+}
+.wimg3 img{
+      height: 470px;
+      width: 350px;
+      box-shadow: 2px 4px 50px #000000;
+      border-radius: 12px;
+}
+
+/* ------------------------------------------------4th-------------------------------------------- */
+
+.page4{
+    /* overflow: hidden; */
+    height: 100vh;
+    background-image:url("/images/gif\ bg.jpg");
+    background-size: cover;
+    background-position:center;
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    font-size: xxx-large;
+    font-family: "Caudex", serif;
+    text-shadow:0px 0px 2px#a45302;
+}
+
+.gif1 img{
+          height:50vh;
+          margin-left: 5px;
+          padding: 1px 5px;
+          border-radius: 12px;
+}
+.gif2 img{
+          height: 50vh;
+          margin-left: 5px;
+          padding:1px 5px;
+          border-radius: 12px;
+}
+
+/* -----------------------------------------5th------------------------------------ */
+.footer{
+    /* overflow: hidden; */
+    height: 100vh;
+    background-color: #231f20;
+    position: relative;
+}
+
+.right img{
+    height:100vh;
+    width:608px;
+    position: absolute;
+    left: 60%;
+}
+.left {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+#one{
+    font-size: xxx-large;
+    font-family: "Caudex", serif;
+
+}
+.left button{
+    background-color: #231f20;
+    color: white;
+    border-color:white;
+    width: 8.5em;
+    height:2.5em;
+    border-radius: 7px;
+    margin-left: 8em;
+    margin-top: 2.5em;
+}
+
+.left button:hover{
+      background-color: white;
+      color: #000000;
+}
+
+.para{
+     margin:1em 0em 0em 4em;
+}
+
+.icon img{
+    height: 2em;
+    width: 2em;
+    margin-top: 4em;
+    padding: 2px;
+    border-radius: 50%;
+    
+}
+.icon{
+    margin-left: 5.5em;
+}
+
+.icon img:hover{
+    box-shadow: 0px 0px 10px #12cbc4;
+}
